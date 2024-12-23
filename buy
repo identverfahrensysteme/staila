@@ -1,0 +1,13 @@
+<script>
+    banxa.redirect('#redirect',
+            {
+                'fiatType': 'AUD',
+                'coinType': 'BTC',
+                'fiatAmount': 500,
+                'coinAmount': 0.2,
+                'walletAddress': '3Hiy7HuFcqwkgERyfRSwEHqrwSwTirm8zb',
+  		'theme': 'dark'
+            });
+</script>
+
+<button id="redirect">Launch Redirect</button>
