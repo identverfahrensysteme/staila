@@ -1,4 +1,9 @@
 <script>
+    const production = new Banxa(buy); //Use this line of code if you want to use Production mode. 'your-partner-name` is the name of your company, e.g. `binance`
+    const sandbox = new Banxa(buy, `sandbox`); //Use this line of code if you want to use Sandbox mode
+</script>
+
+<script>
     banxa.redirect('#redirect',
             {
                 'fiatType': 'AUD',
