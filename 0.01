@@ -157,13 +157,13 @@
                                         <div class="col-sm-4">
                                             <div class="stage-info animated" data-animate="fadeInUp" data-delay=".3">
                                                 <h6 class="title title-s6 title-xs-s2">Total Token Supply</h6>
-                                                <p>1,000,000,000</p>
+                                                <p>17,000,000,000</p>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="stage-info animated" data-animate="fadeInUp" data-delay=".4">
                                                 <h6 class="title title-s6 title-xs-s2">Pre ICO</h6>
-                                                <p>100,000,000</p>
+                                                <p>5,000,000,000</p>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
@@ -175,7 +175,7 @@
                                         <div class="col-sm-4">
                                             <div class="stage-info animated" data-animate="fadeInUp" data-delay=".7">
                                                 <h6 class="title title-s6 title-xs-s2">Pre ICO Price</h6>
-                                                <p>$0.01</p>
+                                                <p>$0.00014</p>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
