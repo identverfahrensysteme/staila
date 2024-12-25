@@ -16,12 +16,12 @@
         const metadata = {
             name: 'Staila (ILA)',
             description: 'Staila (ILA)',
-            url: 'https://staila.io/ico', // origin must match your domain & subdomain
+            url: 'https://staila.io/ico/', // origin must match your domain & subdomain
             icons: ['https://github.com/nextterminal/staila/blob/63ca19ff489a116e1a198abda49f20bd6ce1829a/images/64oILNUxOaij.png?raw=true'] // logo
         }
         // Your contract addresses and chain ID
         const tokenca = '0xe291DCc8B5B1d8776343447C796C0B985EC31f48'
-        const saleca = '0x311066E5dBE298c71d28603347090a76BA7c309a';
+        const saleca = '0x9EF75984C471f31858C3Dbb8A36eFb9b902c52a5';
         const stakingca = '';
         const net = 56;
         const symbol = 'ILA'
@@ -110,12 +110,24 @@
 
         <div class="text-center text-lg-start col-lg-6">
             <div id="description" style="white-space: pre-line">
-                
+                Start Investing Today
+We’re excited to announce that participants in the Staila Token ICO can now purchase tokens using BSC USD (Binance Smart Chain USD). This ensures a fast, secure, and cost-effective payment process for all investors.
+Don’t miss this opportunity to be part of a secure, decentralized future. Use BSC USD to invest in Staila Tokens during the ICO and join a revolutionary journey in digital communication.
+
+How to Buy Staila Tokens with BSC USD?
+1. Prepare Your Wallet: Ensure you have a wallet compatible with BSC USD, such as MetaMask or Trust Wallet.
+2. Access the ICO Portal: Visit our official ICO page.
+3. Select BSC USD as Payment: Choose BSC USD as your payment method and follow the instructions to complete your purchase.
+4. Receive Your Tokens: Your Staila Tokens will be securely transferred to your wallet after the transaction is confirmed.
             </div>
             <!--Social icons and links-->
             <ul class="nav nav-pills d-flex flex-wrap justify-content-center"><li class="nav-item">
-                    <a target="_blank" href="https://staila.io" class="nav-link">
-                        <i title="undefined" class="" style="font-size: 1.7rem;"></i>
+                    <a target="_blank" href="https://staila.io/" class="nav-link">
+                        <i title="undefined" class="bi bi-globe" style="font-size: 1.7rem;"></i>
+                    </a>
+                </li><li class="nav-item">
+                    <a target="_blank" href="https://x.com/staila_token" class="nav-link">
+                        <i title="undefined" class="bi bi-twitter" style="font-size: 1.7rem;"></i>
                     </a>
                 </li></ul>
         </div>
@@ -148,7 +160,7 @@ Leave the ids and special classes unchanged so that elements can get updated-->
                     <div id="progress-inner" class="progress-bar" style="width: 0%"></div>
                 </div>
                 <div class="text-center">
-                    Raised: <span id="raised"><span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span></span>BNB
+                    Raised: <span id="raised"><span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span></span>USDT
                 </div>
             </div>
             
@@ -156,28 +168,34 @@ Leave the ids and special classes unchanged so that elements can get updated-->
             <div>
                 <h3 class="display-6 fw-bold lh-1 text-body-emphasis mb-3">Token sale info</h3>
                 
+              <div class="hstack">
+                  <div>Softcap: 250000USDT</div>
+                  <div class="ms-auto">Hardcap: 750000USDT</div>
+              </div>
               
               
               <div>
                   <div class="hstack">
-                      <div>Start: 2024-12-18T23:00:20+01:00</div>
-                      <div class="ms-auto">End: 2025-01-31T11:59:20+01:00</div>
+                      <div>Start: 2024-12-25T20:30:28+01:00</div>
+                      <div class="ms-auto">End: 2025-04-10T23:00:28+02:00</div>
                   </div>
                   <div class="text-center">
-                      Duration: 43 days 12 hours 59 minutes
+                      Duration: 106 days 1 hours 30 minutes
                   </div>
               </div>
               
                 <div class="text-center m-1">
-                    Tokens are sent to investors instantly when they invest
+                    Investors can claim 100% of their tokens
+             instantly once soft cap is filled
+            
                 </div>
 
                 <div class="text-break text-center">
                     Token sale contract:
-                    <span id="address2">0x311066E5dBE298c71d28603347090a76BA7c309a</span>&nbsp;<i id="copy2" class="bi bi-clipboard text-primary" data-toggle="tooltip" title="Copy to clipboard" style="cursor: pointer"></i>
-                    <a target="_blank" href="https://bscscan.com/address/0x311066E5dBE298c71d28603347090a76BA7c309a"><i id="open2" class="bi bi-box-arrow-up-right" data-toggle="tooltip" title="View on tracker" style="cursor: pointer"></i></a>
+                    <span id="address2">0x9EF75984C471f31858C3Dbb8A36eFb9b902c52a5</span>&nbsp;<i id="copy2" class="bi bi-clipboard text-primary" data-toggle="tooltip" title="Copy to clipboard" style="cursor: pointer"></i>
+                    <a target="_blank" href="https://bscscan.com/address/0x9EF75984C471f31858C3Dbb8A36eFb9b902c52a5"><i id="open2" class="bi bi-box-arrow-up-right" data-toggle="tooltip" title="View on tracker" style="cursor: pointer"></i></a>
                     <br/>
-                    <span class="text-primary">You can send BNB directly to the token sale contract (do not send stablecoins or tokens). If transaction fails "out of gas" try to increase gas.</span>
+                    <span class="text-danger">Do not send funds or tokens directly to the token sale contract! Use this UI to buy tokens properly.</span>
                 </div>
             </div>
 
@@ -191,14 +209,14 @@ Leave the ids and special classes unchanged so that elements can get updated-->
             
             <!-- Tokens rate/price -->
             <h4 class="display-7 fw-bold lh-1 text-body-emphasis mb-3 text-center">
-                1 ILA = 0.0000002 BNB
+                1 ILA = 0.0003 USDT
             </h4>
 
             <label for="amountbuy" class="form-label">Input investment amount<span id="mymax"></span>:</label>
             <!--Keep the ID "amount" unchanged-->
             <div class="input-group mb-3">
                 <input type="number" min="0" step="0.1" class="form-control text-center" id="amountbuy" aria-describedby="helperbuy">
-                <span class="input-group-text">BNB</span>
+                <span class="input-group-text">USDT</span>
             </div>
             <div class="form-text" id="helperbuy">You will get: <span id="qty">...</span>ILA</div>
             
@@ -221,11 +239,22 @@ Leave the ids and special classes unchanged so that elements can get updated-->
 
             <div class="connected" role="alert" style="display: none">
                 <div class="hstack">
-                    <div>Invested: <span id="myinvested"></span>BNB</div>
+                    <div>Invested: <span id="myinvested"></span>USDT</div>
                     <div class="ms-auto">Purchased: <span class="mypurchased"></span>ILA</div>
                 </div>
                 
-                
+                <div class="hstack">
+                          <div>Claimed: <span id="myclaimed"></span>/<span class="mypurchased"></span>ILA</div>
+                          <div class="ms-auto">Available: <span id="myavailable"></span>ILA</div>
+                      </div>
+
+                      <div class="d-grid gap-2">
+                          <button id="claimbtn" class="btns btn btn-primary btn-lg" type="button" style="display: none">Claim<span id="timerclaim"></span></button>
+                          <button id="refundbtn" class="btns btn btn-warning btn-lg" type="button" style="display: none">Refund</button>
+                      </div>
+                      <div id="wrongnetclaim" class="alert alert-warning" role="alert" style="display: none">
+                          Please switch to BNB Smart Chain
+                      </div>
             </div>
 
              
@@ -236,7 +265,7 @@ Leave the ids and special classes unchanged so that elements can get updated-->
   <div id="referral" class="px-4 py-1 my-1 text-center">
         <h3 class="display-6 fw-bold lh-1 text-body-emphasis mb-3">Referral program</h3>
       <div>
-          Referral commission: 5%
+          Referral commission: 3%
       </div>
       <p>
           Share your referral link and earn free ILA
@@ -254,8 +283,8 @@ Leave the ids and special classes unchanged so that elements can get updated-->
           Your referral earnings: <span id="myref"></span> ILA
       </div>
         
-      <p id="refinstant">
-          ILA are sent to you instantly every time someone invests via your referral link
+      <p id="refclaimtoken">
+          ILA are added to your tokens balance, you can claim them on the same terms with investors
       </p>
       <p>
           Investor's wallet must be different from referrer's wallet otherwise commission is not paid (you can't refer yourself)
@@ -291,5 +320,3 @@ Leave the ids and special classes unchanged so that elements can get updated-->
 
   </body>
 </html>
-
-    
